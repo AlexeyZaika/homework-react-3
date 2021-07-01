@@ -1,38 +1,91 @@
 .App {
+  min-height: 100vh;
+  background-color: royalblue;
+}
+.container {
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table th {
+  padding: 5px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.table td {
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  color: royalblue;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-bottom: 1px solid royalblue;
+}
+.block-button {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  padding: 7px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: royalblue;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal__title {
+  margin-bottom: 20px;
+}
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.form__line {
+  position: relative;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__input {
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.form__button {
+  padding: 7px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: royalblue;
+  border: 1px solid royalblue;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+.form__button:hover {
+  color: royalblue;
+  background-color: #fff;
+}
+.form__error {
+  padding: 5px;
+  position: absolute;
+  top: -14px;
+  left: 10px;
+  font-size: 12px;
+  color: red;
+  background-color: #fff;
 }
